@@ -49,6 +49,13 @@ export default function BreedPage({
           <span>{breed.name}</span>
         </nav>
 
+        {breed.image && (
+          <div className="breed-hero-image">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={breed.image} alt={`${breed.name} — ${breed.origin}`} />
+          </div>
+        )}
+
         <div className="breed-layout">
           <div className="breed-main">
             {breed.featured && <span className="tag">Bestseller</span>}

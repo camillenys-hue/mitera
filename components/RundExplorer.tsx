@@ -63,6 +63,16 @@ export default function RundExplorer({ countries }: { countries: Country[] }) {
                   key={breed.slug}
                   className="breed-card"
                 >
+                  {breed.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      className="breed-card__image"
+                      src={breed.image}
+                      alt={breed.name}
+                    />
+                  ) : (
+                    <div className="breed-card__image breed-card__image--empty" />
+                  )}
                   {breed.featured && <span className="tag">Bestseller</span>}
                   <h3>{breed.name}</h3>
                   <span className="breed-card__origin">{breed.origin}</span>
@@ -167,7 +177,7 @@ export default function RundExplorer({ countries }: { countries: Country[] }) {
         }
         .breed-card {
           background: var(--ink);
-          padding: 28px 24px;
+          padding: 0 24px 24px;
           display: flex;
           flex-direction: column;
           gap: 8px;
@@ -176,6 +186,16 @@ export default function RundExplorer({ countries }: { countries: Country[] }) {
         }
         .breed-card:hover {
           background: var(--ink-2);
+        }
+        .breed-card__image {
+          width: calc(100% + 48px);
+          margin: 0 -24px 16px;
+          aspect-ratio: 4 / 3;
+          object-fit: cover;
+          filter: saturate(0.92) contrast(1.03);
+        }
+        .breed-card__image--empty {
+          background: linear-gradient(150deg, var(--ink-2), var(--ink-3));
         }
         .breed-card h3 {
           font-size: 20px;

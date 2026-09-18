@@ -6,6 +6,7 @@ export type Breed = {
   description: string[];
   traits: string[];
   featured?: boolean;
+  image?: string;
 };
 
 export type Country = {
@@ -60,6 +61,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "charolais",
         name: "Charolais",
+        image: "/images/breeds/charolais.jpg",
         origin: "Bourgondië, Frankrijk",
         tagline: "Eén van de oudste vleesrassen ter wereld — stevig, licht gemarmerd en smaakvol.",
         description: [
@@ -71,6 +73,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "limousin",
         name: "Limousin",
+        image: "/images/breeds/limousin.jpg",
         origin: "Centraal Massief, Frankrijk",
         tagline: "Gebalanceerd, zacht en licht zoetig — een van de bekendste rassen van Frankrijk.",
         description: [
@@ -82,6 +85,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "salers",
         name: "Salers",
+        image: "/images/breeds/salers.jpg",
         origin: "Cantal, Frankrijk",
         tagline: "Een beschermde delicatesse van de vulkanische bodems van de Auvergne.",
         description: [
@@ -93,6 +97,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "aubrac",
         name: "Aubrac",
+        image: "/images/breeds/aubrac.jpg",
         origin: "Plateau de l'Aubrac, Frankrijk",
         tagline: "Een oeroud, robuust ras met een kruidig, verfijnd karakter.",
         description: [
@@ -104,6 +109,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "blonde-daquitaine",
         name: "Blonde d'Aquitaine",
+        image: "/images/breeds/blonde-daquitaine.jpg",
         origin: "Aquitaine, Zuidwest-Frankrijk",
         tagline: "Groot en elegant, met een mager maar mals en cholesterolarm vlees.",
         description: [
@@ -126,6 +132,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "montbeliard",
         name: "Montbéliard",
+        image: "/images/breeds/montbeliard.jpg",
         origin: "Jura & Savoie, Frankrijk",
         tagline: "Een ware ontdekking — krachtig van smaak en perfect geschikt voor dry aging.",
         description: [
@@ -137,6 +144,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "abondance",
         name: "Abondance",
+        image: "/images/breeds/abondance.jpg",
         origin: "Savoie, Frankrijk",
         tagline: "Een kleine bergkoe met een fijne, mooi gemarmerde vleessmaak.",
         description: [
@@ -157,6 +165,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "aberdeen-angus",
         name: "Aberdeen Angus",
+        image: "/images/breeds/aberdeen-angus.jpg",
         origin: "Schotse Highlands & kust",
         tagline: "Krachtig, sappig en sterk gemarmerd — een ras met tien eeuwen geschiedenis.",
         description: [
@@ -168,6 +177,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "highlander",
         name: "Highlander",
+        image: "/images/breeds/highlander.jpg",
         origin: "Schotse Highlands & Hebriden",
         tagline: "Een oerras met een aparte, moeilijk te vergelijken smaak.",
         description: [
@@ -190,6 +200,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "belted-galloway",
         name: "Belted Galloway",
+        image: "/images/breeds/belted-galloway.jpg",
         origin: "West-Schotland",
         tagline: "Herkenbaar aan de witte gordel — mals vlees, laag in verzadigd vet.",
         description: [
@@ -201,6 +212,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "shorthorn",
         name: "Shorthorn",
+        image: "/images/breeds/shorthorn.jpg",
         origin: "Schotland",
         tagline: "Een 18de-eeuws dubbeldoelras, vandaag een echt topproduct.",
         description: [
@@ -232,6 +244,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "chianina",
         name: "Chianina",
+        image: "/images/breeds/chianina.jpg",
         origin: "Valdichiana, Toscane",
         tagline: "De reus van Toscane — het ras achter de legendarische bistecca alla fiorentina.",
         description: [
@@ -254,6 +267,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "romagnola",
         name: "Romagnola",
+        image: "/images/breeds/romagnola.jpg",
         origin: "Emilia-Romagna, Italië",
         tagline: "Een oud werkdier, herboren als verfijnd vleesras.",
         description: [
@@ -276,6 +290,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "scottona",
         name: "Scottona",
+        image: "/images/breeds/scottona.jpg",
         origin: "Verona-streek, Italië (Frans-Italiaans)",
         tagline: "Het beste van twee werelden: een Frans kalf, opgegroeid op Italiaanse bodem.",
         description: [
@@ -296,6 +311,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "arouquesa",
         name: "Arouquesa",
+        image: "/images/breeds/arouquesa.jpg",
         origin: "Noord-Portugal (DOC)",
         tagline: "Zeldzaam en zeer gegeerd — in Portugal een echte delicatesse.",
         description: [
@@ -307,6 +323,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "black-angus-azoren",
         name: "Black Angus van de Azoren",
+        image: "/images/breeds/black-angus-azoren.jpg",
         origin: "Azoren, Portugal",
         tagline: "Vrij grazend op vulkanische bodem, midden in de Atlantische Oceaan.",
         description: [
@@ -382,6 +399,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "rubia-gallega",
         name: "Rubia Gallega",
+        image: "/images/breeds/rubia-gallega.jpg",
         origin: "Galicië, Noordwest-Spanje",
         tagline: "Het inmiddels wereldberoemde rund van de Atlantische kust van Galicië.",
         description: [
@@ -394,6 +412,7 @@ export const COUNTRIES: Country[] = [
       {
         slug: "kruising-rubia-holstein",
         name: "Kruising Rubia Gallega / Holstein",
+        image: "/images/breeds/kruising-rubia-holstein.jpg",
         origin: "Galicië, Spanje",
         tagline: "Nog meer marmering, nog meer diepgang — topkwaliteit voor de fijnproever.",
         description: [
