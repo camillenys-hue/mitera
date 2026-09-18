@@ -1,0 +1,162 @@
+.hero {
+          position: relative;
+          padding: 150px 0 120px;
+          background:
+            radial-gradient(ellipse 900px 500px at 15% -10%, rgba(182,136,74,0.16), transparent 60%),
+            linear-gradient(180deg, #0d0c0a 0%, #14110c 100%);
+          border-bottom: 1px solid var(--line);
+          overflow: hidden;
+        }
+        .hero__inner {
+          max-width: 760px;
+        }
+        .hero h1 {
+          font-size: clamp(40px, 6vw, 68px);
+          margin: 22px 0 26px;
+        }
+        .hero h1 em {
+          font-style: italic;
+          color: var(--brass-bright);
+        }
+        .hero__lead {
+          font-size: 18px;
+          max-width: 560px;
+          color: var(--cream-dim);
+        }
+        .hero__cta {
+          display: flex;
+          gap: 16px;
+          margin-top: 32px;
+          flex-wrap: wrap;
+        }
+        .story {
+          display: grid;
+          grid-template-columns: 280px 1fr;
+          gap: 48px;
+        }
+        .story h2 {
+          font-size: clamp(28px, 3.4vw, 40px);
+          max-width: 520px;
+        }
+        .story__body p {
+          max-width: 620px;
+        }
+        .link-arrow {
+          display: inline-block;
+          margin-top: 8px;
+          font-size: 13px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: var(--brass-bright);
+        }
+        .section-head {
+          margin-bottom: 44px;
+          max-width: 620px;
+        }
+        .section-head h2 {
+          font-size: clamp(26px, 3.2vw, 38px);
+          margin-top: 14px;
+        }
+        .cat-grid {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 1px;
+          background: var(--line);
+          border: 1px solid var(--line);
+        }
+        .cat-card {
+          background: var(--ink);
+          padding: 34px 26px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          transition: background 0.25s ease;
+          min-height: 220px;
+        }
+        .cat-card:hover {
+          background: var(--ink-2);
+        }
+        .cat-card__n {
+          font-family: var(--font-display), serif;
+          font-size: 13px;
+          color: var(--brass);
+          letter-spacing: 0.1em;
+        }
+        .cat-card h3 {
+          font-size: 22px;
+        }
+        .cat-card p {
+          font-size: 14px;
+          flex: 1;
+        }
+        .cat-card__link {
+          font-size: 12px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: var(--brass-bright);
+          font-weight: 700;
+        }
+        .feat-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 22px;
+        }
+        .feat-card {
+          border: 1px solid var(--line);
+          padding: 34px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          transition: border-color 0.25s ease, background 0.25s ease;
+        }
+        .feat-card:hover {
+          border-color: var(--brass);
+          background: var(--ink-2);
+        }
+        .feat-card h3 {
+          font-size: 26px;
+        }
+        .cta-band {
+          background: linear-gradient(135deg, var(--oxblood) 0%, #46201d 100%);
+          padding: 90px 0;
+        }
+        .cta-band__inner {
+          max-width: 620px;
+          text-align: left;
+        }
+        .cta-band h2 {
+          color: var(--cream);
+          font-size: clamp(26px, 3.4vw, 38px);
+        }
+        .cta-band p {
+          color: rgba(243, 236, 221, 0.82);
+        }
+        .cta-band .btn-solid {
+          background: var(--cream);
+          border-color: var(--cream);
+          color: var(--ink);
+        }
+        .cta-band .btn-solid:hover {
+          background: var(--brass-bright);
+          border-color: var(--brass-bright);
+        }
+        @media (max-width: 900px) {
+          .story {
+            grid-template-columns: 1fr;
+          }
+          .cat-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .feat-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+        @media (max-width: 560px) {
+          .cat-grid {
+            grid-template-columns: 1fr;
+          }
+          .hero {
+            padding: 120px 0 80px;
+          }
+        }

@@ -1,0 +1,124 @@
+.breadcrumb {
+          display: flex;
+          gap: 8px;
+          font-size: 12px;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: var(--stone);
+          margin-bottom: 48px;
+        }
+        .breadcrumb a {
+          color: var(--stone);
+        }
+        .breadcrumb a:hover {
+          color: var(--brass-bright);
+        }
+        .breed-layout {
+          display: grid;
+          grid-template-columns: 1fr 300px;
+          gap: 64px;
+        }
+        .breed-main h1 {
+          font-size: clamp(36px, 5vw, 58px);
+          margin: 14px 0 18px;
+        }
+        .breed-tagline {
+          font-size: 19px;
+          color: var(--cream);
+          font-family: var(--font-display), serif;
+          font-style: italic;
+          max-width: 620px;
+          margin-bottom: 30px;
+        }
+        .breed-paragraph {
+          max-width: 640px;
+          font-size: 16px;
+        }
+        .cta-inline {
+          margin-top: 36px;
+          padding: 28px;
+          border: 1px solid var(--line);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+        .cta-inline p {
+          margin: 0;
+          max-width: 380px;
+          font-size: 14px;
+        }
+        .info-box {
+          padding-bottom: 24px;
+          margin-bottom: 24px;
+          border-bottom: 1px solid var(--line);
+        }
+        .info-box:last-child {
+          border-bottom: none;
+        }
+        .info-box__label {
+          display: block;
+          font-size: 11px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: var(--stone);
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .info-box__value {
+          font-family: var(--font-display), serif;
+          font-size: 20px;
+          color: var(--cream);
+        }
+        .trait-list,
+        .sibling-list {
+          display: flex;
+          flex-direction: column;
+          gap: 9px;
+        }
+        .trait-list li {
+          font-size: 14px;
+          color: var(--cream-dim);
+          padding-left: 14px;
+          position: relative;
+        }
+        .trait-list li::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 8px;
+          width: 6px;
+          height: 1px;
+          background: var(--brass);
+        }
+        .sibling-list a {
+          font-size: 14px;
+          color: var(--cream-dim);
+        }
+        .sibling-list a:hover {
+          color: var(--brass-bright);
+        }
+        .breed-nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 32px;
+          flex-wrap: wrap;
+          gap: 16px;
+        }
+        .breed-nav__all {
+          font-size: 13px;
+          color: var(--cream-dim);
+          font-weight: 600;
+        }
+        .breed-nav__next {
+          font-size: 13px;
+          color: var(--brass-bright);
+          font-weight: 600;
+        }
+        @media (max-width: 900px) {
+          .breed-layout {
+            grid-template-columns: 1fr;
+          }
+        }

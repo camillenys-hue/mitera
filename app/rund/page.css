@@ -1,0 +1,8 @@
+.page-head {
+          max-width: 720px;
+          margin-bottom: 56px;
+        }
+        .page-head h1 {
+          font-size: clamp(30px, 4vw, 46px);
+          margin-top: 14px;
+        }

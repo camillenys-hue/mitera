@@ -1,0 +1,42 @@
+.charcuterie-list {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+        }
+        .charcuterie-item {
+          display: grid;
+          grid-template-columns: 280px 1fr;
+          gap: 40px;
+          padding: 40px 0;
+          border-top: 1px solid var(--line);
+        }
+        .charcuterie-item:first-child {
+          border-top: 1px solid var(--line);
+        }
+        .charcuterie-item__head h2 {
+          font-size: 26px;
+          margin-top: 12px;
+        }
+        .charcuterie-item__body {
+          max-width: 620px;
+        }
+        .cta-inline {
+          margin-top: 40px;
+          padding: 28px;
+          border: 1px solid var(--line);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+        .cta-inline p {
+          margin: 0;
+          max-width: 420px;
+          font-size: 14px;
+        }
+        @media (max-width: 760px) {
+          .charcuterie-item {
+            grid-template-columns: 1fr;
+          }
+        }
